@@ -1,3 +1,7 @@
+/*
+Beat Template
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
 body {
   /*font-size: .875rem;*/
@@ -61,11 +65,14 @@ body {
 .sidebar .nav-link {
   font-weight: 500;
   color: #333;
+  position: relative;
 }
 
 .sidebar .nav-link .feather {
   margin-right: 4px;
   color: #727272;
+  position: relative;
+  top: -2px;
 }
 
 .sidebar .nav-link.active {
@@ -180,4 +187,143 @@ header .nav-link{
 .fa-expand,
 .fa-bell{
       color: #4a596a;
+}
+.beat-bell{
+  position: relative;
+}
+.beat-bell:after{
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #ec205f;
+  border: 1px solid #FFF;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+}
+.btn-collapse:hover,
+.btn-collapse{
+  border-radius: 4px;
+    border: none;
+    color: #5f8fdf;
+    background: #dfe8f9;
+    font-weight: 600;
+    padding: 4px 8px;
+    margin-top: 20px;
+    font-size: 12px;
+    margin-left: 20px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: center;
+}
+#sidebarMenu.beat-micro-sidebar{
+  /*background: lime;*/
+  width: 74px;
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#sidebarMenu.beat-micro-sidebar a.nav-link{
+  text-align: center;
+}
+#sidebarMenu a.nav-link span{
+  -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    transition: all 1s ease;
+    opacity: 1;
+}
+#sidebarMenu:not(.beat-micro-sidebar) .btn-collapse .feather-maximize-2,
+#sidebarMenu.beat-micro-sidebar .btn-collapse .feather-minimize-2,
+#sidebarMenu.beat-micro-sidebar .btn-collapse span,
+#sidebarMenu.beat-micro-sidebar a.nav-link span{
+  /*display: none;*/
+  opacity: 0;
+  position: absolute;
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#sidebarMenu.beat-micro-sidebar a.nav-link:hover svg,
+#sidebarMenu.beat-micro-sidebar a.nav-link svg{
+  color: #4a596a;
+}
+#sidebarMenu{
+  width: 230px;
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#sidebarMenu + main{
+  width: calc(100vw - 230px);
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    margin-top: 50px;
+}
+#sidebarMenu.beat-micro-sidebar + main{
+  width: calc(100vw - 74px);
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#sidebarMenu h5{
+  padding: 0.2rem 1rem;
+  line-height: normal;
+  font-size: 12px;
+  color: #909399;
+  margin: 20px 0px 0px;
+}
+#sidebarMenu.beat-micro-sidebar h5{
+  text-align: center;
+}
+.sidebar:not(.beat-micro-sidebar) .nav-link::before{
+      content: "";
+      display: block;
+      width: 0px;
+      height: 1px;
+      position: absolute;
+      bottom: 7px;
+      left: 20px;
+      background: #4a596a;
+      z-index: 1;
+      opacity: 0;
+      /*opacity: 1;*/
+      /*width: 100px;*/
+      -webkit-transition: all 0.7s cubic-bezier(0.55, 0, 0.1, 1);
+      transition: all 0.7s cubic-bezier(0.55, 0, 0.1, 1);
+}
+.sidebar:not(.beat-micro-sidebar) .nav-link:hover::before {
+      width: 100px;
+      opacity: 1;
+      -webkit-transform: translate(20px, 0);
+              transform: translate(20px, 0);
+}
+.sidebar .nav-link.active{
+  color: #5f8fdf;
+}
+.beat-panel{
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 8px 16px 0 rgba(40, 40, 90, 0.09), 0 3px 6px 0 rgba(0, 0, 0, 0.065);
+    box-shadow: 0 8px 16px 0 rgba(40, 40, 90, 0.09), 0 3px 6px 0 rgba(0, 0, 0, 0.065);
+}
+
+.beat-menu-collapse ul{
+  list-style-type: none;
+  border-left: 2px solid #4a596a;
+  padding-left: 5px;
+  margin-left: 22px;
+}
+.beat-menu-collapse ul li a{
+  text-decoration: none;
+  color: #4a596a;
+  line-height: 40px;
+  font-size: 14px;
+}
+.beat-text-shadow{
+  text-shadow: 0px 0px 1px #f3f7fa, 0px 0px 1px #f3f7fa, 0px 0px 1px #f3f7fa, 0px 0px 1px #f3f7fa, 0px 0px 1px #f3f7fa, 0px 0px 1px #f3f7fa, 0px 0px 1px #f3f7fa, 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 3px 9px rgba(0, 0, 0, 0.1);
 }

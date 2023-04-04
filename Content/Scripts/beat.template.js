@@ -1,4 +1,14 @@
+/*
+BEAT Template
+*/
+
 /* globals Chart:false, feather:false */
+
+var collapseBtn = document.querySelector(".btn-collapse");
+var sidebar = document.getElementById("sidebarMenu");
+collapseBtn.addEventListener('click', function handleClick(event) {
+  sidebar.classList.toggle("beat-micro-sidebar");
+});
 
 (function () {
   'use strict'

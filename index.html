@@ -38,7 +38,7 @@
 			    <div class="collapse navbar-collapse" id="navbarNavDropdown">
 			      <ul class="navbar-nav ms-auto">
 			      	<li class="nav-item dropdown">
-			          <a class="nav-link dropdown-toggle beat-profile-toogle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			          <a class="nav-link dropdown-toggle beat-profile-toogle beat-text-shadow" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 			            <span class="fi fi-us"></span>
 			          </a>
 			          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
@@ -53,13 +53,13 @@
 			        </li>
 			      	<li class="nav-item">
 			          <a class="nav-link dropdown-toggle beat-profile-toogle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-			            <i class="fa-solid fa-expand"></i>
+			            <i class="fa-solid fa-expand beat-text-shadow"></i>
 			          </a>
 			        </li>
 			      	<li class="nav-item dropdown">
 			          <a class="nav-link dropdown-toggle beat-profile-toogle" href="#" id="notificationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 			            <!-- <i class="fa-solid fa-bell"></i> -->
-			            <i class="fa-solid fa-bell"></i>
+			            <i class="fa-solid fa-bell beat-text-shadow beat-bell"></i>
 			          </a>
 			          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notificationDropdown">
   						  <li><a class="dropdown-item" href="#">Notification 1</a></li>
@@ -94,45 +94,74 @@
 
 <div class="container-fluid">
   <div class="row">
-    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light1 sidebar collapse">
-      <div class="position-sticky pt-3">
+
+  	<!--menu:start-->
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light1 sidebar collapse beat-micro-sidebar1">
+      <div class="position-sticky pt-5">
+      	<h5>Apps</h5>
         <ul class="nav flex-column">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">
               <span data-feather="home"></span>
-              Dashboard
+              <span>Dashboard</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
               <span data-feather="file"></span>
-              Table
+              <span>Table</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
               <span data-feather="key"></span>
-              Forgot Password
+              <span>Forgot Password</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
               <span data-feather="users"></span>
-              Login
+              <span>Login</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
               <span data-feather="users"></span>
-              Login 2
+              <span>Login 2</span>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">
               <span data-feather="layers"></span>
-              Blank
+              <span>Blank</span>
             </a>
           </li>
+        </ul><h5>User interface</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">
+              <span data-feather="home"></span>
+              <span>Item 1</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file"></span>
+              <span>Item 2</span>
+            </a>
+          </li>
+          <li class="nav-item dropdown1 d-none1">
+		    <a class="nav-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><span data-feather="file"></span> Dropdown</a>
+		    <div class="collapse" id="collapseExample">
+			  <div class="beat-menu-collapse">
+			    <ul>
+			    	<li><a href="#">Sub menu 1</a></li>
+			    	<li><a href="#">Sub menu 2</a></li>
+			    	<li><a href="#">Sub menu 3</a></li>
+			    </ul>
+			  </div>
+			</div>
+		  </li>
         </ul>
 
         <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted d-none">
@@ -167,11 +196,14 @@
             </a>
           </li>
         </ul>
+        <button class="btn btn-collapse btn-beat"><span data-feather="minimize-2"></span><span data-feather="maximize-2"></span> <span>Collapse</span></button>
       </div>
     </nav>
+    <!--menu:end-->
 
+    <!--content:start-->
     <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
-      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom d-none">
         <h1 class="h2">Dashboard</h1>
         <div class="btn-toolbar mb-2 mb-md-0 d-none">
           <div class="btn-group me-2">
@@ -185,7 +217,10 @@
         </div>
       </div>
 
-      <canvas class="my-4 w-100 d-none1" id="myChart" width="900" height="380"></canvas>
+      <div class="beat-panel">
+	      <canvas class="my-4 w-100 d-none1" id="myChart" width="900" height="380"></canvas>
+      </div>
+
 
       <!-- <h2>Table</h2> -->
       <div class="table-responsive d-none">
@@ -316,14 +351,15 @@
         </table>
       </div>
     </main>
+    <!--content:end-->
   </div>
 </div>
 
     <!--javascript:start-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <!--javascript:end-->
  	<script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
  	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
  	<script src="Content/Scripts/beat.template.js"></script>
+    <!--javascript:end-->
   </body>
 </html>
