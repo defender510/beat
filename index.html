@@ -30,7 +30,7 @@
   		<div class="navbar-nav">
   		  <div class="nav-item text-nowrap">
   		    <!-- <a class="nav-link px-3" href="#">Sign out</a> -->
-  		    <nav class="navbar navbar-expand-lg navbar-light1 bg-light1">
+  		    <nav class="navbar navbar-expand-lg navbar-light1 navbar-beat bg-light1">
 			  <div class="container-fluid">
 			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 			      <span class="navbar-toggler-icon"></span>
@@ -41,7 +41,7 @@
 			          <a class="nav-link dropdown-toggle beat-profile-toogle beat-text-shadow" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 			            <span class="fi fi-us"></span>
 			          </a>
-			          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
+			          <ul class="dropdown-menu dropdown-menu-end beat-dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 			            <li><a class="dropdown-item" href="#"><span class="fi fi-us"></span> English</a></li>
 			            <li><a class="dropdown-item" href="#"><span class="fi fi-it"></span> Italian</a></li>
 			            <li><a class="dropdown-item" href="#"><span class="fi fi-fr"></span> French</a></li>
@@ -54,14 +54,15 @@
 			      	<li class="nav-item">
 			          <a class="nav-link dropdown-toggle beat-profile-toogle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 			            <i class="fa-solid fa-expand beat-text-shadow"></i>
+			            <i class="fa-solid fa-minimize beat-text-shadow d-none"></i>
 			          </a>
 			        </li>
-			      	<li class="nav-item dropdown">
+			      	<li class="nav-item dropdown1 dropdown-center">
 			          <a class="nav-link dropdown-toggle beat-profile-toogle" href="#" id="notificationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 			            <!-- <i class="fa-solid fa-bell"></i> -->
 			            <i class="fa-solid fa-bell beat-text-shadow beat-bell"></i>
 			          </a>
-			          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notificationDropdown">
+			          <ul class="dropdown-menu dropdown-menu-end1 beat-dropdown-menu" aria-labelledby="notificationDropdown">
   						  <li><a class="dropdown-item" href="#">Notification 1</a></li>
   						  <li><a class="dropdown-item" href="#">Notification 2</a></li>
   						  <li><a class="dropdown-item" href="#">Notification 3</a></li>
@@ -70,18 +71,18 @@
   						</ul>
 			        </li>
 			        <li class="nav-item beat-username">
-			        	<a class="nav-link" href="/">John Doe</a>
+			        	<a class="nav-link" href="#">John Doe</a>
 			        </li>
 			        <li class="nav-item dropdown">
 			          <a class="nav-link dropdown-toggle beat-profile-toogle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 			            <img src="Content/Images/profile.jpg" alt="Profile Image" width="35" height="35" class="rounded-circle me-2">
 			          </a>
-			          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdownMenuLink">
-			            <li><a class="dropdown-item" href="#">Profile</a></li>
-			            <li><a class="dropdown-item" href="#">Calendar</a></li>
-			            <li><a class="dropdown-item" href="#">Contacts</a></li>
+			          <ul class="dropdown-menu dropdown-menu-end beat-dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			            <li><a class="dropdown-item" href="#"><span data-feather="user"></span> Profile</a></li>
+			            <li><a class="dropdown-item" href="#"><span data-feather="calendar"></span> Calendar</a></li>
+			            <li><a class="dropdown-item" href="#"><span data-feather="users"></span> Contacts</a></li>
 			            <li><hr class="dropdown-divider"></li>
-			            <li><a class="dropdown-item" href="#">Logout</a></li>
+			            <li><a class="dropdown-item" href="#"><span data-feather="log-out"></span> Logout</a></li>
 			          </ul>
 			        </li>
 			      </ul>
@@ -96,42 +97,42 @@
   <div class="row">
 
   	<!--menu:start-->
-    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light1 sidebar collapse beat-micro-sidebar1">
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light1 sidebar collapse">
       <div class="position-sticky pt-5">
       	<h5>Apps</h5>
         <ul class="nav flex-column">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">
+            <a class="nav-link active" aria-current="page" href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Dashboard">
               <span data-feather="home"></span>
               <span>Dashboard</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Table">
               <span data-feather="file"></span>
               <span>Table</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Forgot Password">
               <span data-feather="key"></span>
               <span>Forgot Password</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="#" href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Login">
               <span data-feather="users"></span>
               <span>Login</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="#" href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Login 2">
               <span data-feather="users"></span>
               <span>Login 2</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="#" href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Blank">
               <span data-feather="layers"></span>
               <span>Blank</span>
             </a>
@@ -139,20 +140,20 @@
         </ul><h5>User interface</h5>
         <ul class="nav flex-column">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">
+            <a class="nav-link" aria-current="page" href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Item 1">
               <span data-feather="home"></span>
               <span>Item 1</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Item 2">
               <span data-feather="file"></span>
               <span>Item 2</span>
             </a>
           </li>
-          <li class="nav-item dropdown1 d-none1">
-		    <a class="nav-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><span data-feather="file"></span> Dropdown</a>
-		    <div class="collapse" id="collapseExample">
+          <li class="nav-item dropdown1 d-none1 beat-subnav" data-bs-toggle="tooltip" data-bs-placement="right" title="Dropdown">
+		    <a class="nav-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><span data-feather="list"></span> <span>Dropdown <span data-feather="chevron-down"></span><span data-feather="chevron-up"></span></span></a>
+		    <div class="collapse beat-subnav-collapse" id="collapseExample">
 			  <div class="beat-menu-collapse">
 			    <ul>
 			    	<li><a href="#">Sub menu 1</a></li>
@@ -217,7 +218,11 @@
         </div>
       </div>
 
-      <div class="beat-panel">
+      <div class="beat-panel text-center p-20">
+      	<h1>AMAZING HEADER</h1>
+ 		<p>Your amazing content goes here!</p>
+      </div>
+      <div class="beat-panel p-20 d-none">
 	      <canvas class="my-4 w-100 d-none1" id="myChart" width="900" height="380"></canvas>
       </div>
 
