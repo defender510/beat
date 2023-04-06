@@ -76,6 +76,18 @@ btn_minimize.addEventListener('click', function handleClick(event) {
 });
 // fullscreen end
 
+// sidebar toggle start
+var beat_hamburger = document.querySelector(".beat-nav-toggler");
+var sidebar_mask = document.querySelector(".sidebar-mask");
+beat_hamburger.addEventListener('click', function handleClick(event) {
+  sidebar_mask.classList.toggle("mask-on");
+});
+sidebar_mask.addEventListener('click', function handleClick(event) {
+  sidebar_mask.classList.toggle("mask-on");
+  bootstrap.Collapse.getOrCreateInstance(sidebar).toggle();
+});
+// sidebar toggle end
+
 (function () {
   'use strict'
 

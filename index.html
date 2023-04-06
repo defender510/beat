@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="Content/StyleSheets/beat.template.css" rel="stylesheet" >
+    <link href="Content/StyleSheets/beat.template.responsive.css" rel="stylesheet" >
     <!--style:end-->
 
     <title>Template Title</title>
@@ -17,8 +18,9 @@
   <body>
     <header class="navbar navbar-white sticky-top bg-white1 flex-md-nowrap p-0 shadow1">
   		<a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="/">BEAT</a>
-		<button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
-    	<span class="navbar-toggler-icon"></span>
+		<button class="navbar-toggler position-absolute d-md-none beat-nav-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    	<!-- <span class="navbar-toggler-icon"></span> -->
+    		<span data-feather="menu"></span>
   		</button>
   		<div class="beat-search">
   			<!-- <input class="form-control form-control-dark" type="text" placeholder="Search..." aria-label="Search"> -->
@@ -30,7 +32,7 @@
   		<div class="navbar-nav">
   		  <div class="nav-item text-nowrap">
   		    <!-- <a class="nav-link px-3" href="#">Sign out</a> -->
-  		    <nav class="navbar navbar-expand-lg navbar-light1 navbar-beat bg-light1">
+  		    <nav class="navbar navbar-expand navbar-light1 navbar-beat bg-light1">
 			  <div class="container-fluid">
 			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 			      <span class="navbar-toggler-icon"></span>
@@ -62,12 +64,47 @@
 			            <!-- <i class="fa-solid fa-bell"></i> -->
 			            <i class="fa-solid fa-bell beat-text-shadow beat-bell"></i>
 			          </a>
-			          <ul class="dropdown-menu dropdown-menu-end1 beat-dropdown-menu" aria-labelledby="notificationDropdown">
-  						  <li><a class="dropdown-item" href="#">Notification 1</a></li>
-  						  <li><a class="dropdown-item" href="#">Notification 2</a></li>
-  						  <li><a class="dropdown-item" href="#">Notification 3</a></li>
-  						  <li><hr class="dropdown-divider"></li>
-  						  <li><a class="dropdown-item" href="#">View all notifications</a></li>
+			          <ul class="dropdown-menu dropdown-menu-end beat-dropdown-menu beat-notification" aria-labelledby="notificationDropdown">
+  						  <li>
+  						  	<a class="dropdown-item" href="#">
+  						  		<div class="row">
+  							  		<div class="col-7">
+  							  			<p><span data-feather="shopping-cart"></span> <b>New order</b></p>
+	  						  		</div>
+  							  		<div class="col-5 text-end">
+  							  			<p>Just now! <span data-feather="clock"></span></p>
+	  						  		</div>
+  						  		</div>
+  						  		<h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in diam sit amet felis ultricies ultricies vitae et tortor. Proin dapibus justo felis, ut imperdiet lacus accumsan quis.</h6>
+  						  	</a>
+  						  </li>
+  						  <li>
+  						  	<a class="dropdown-item" href="#">
+  						  		<div class="row">
+  							  		<div class="col-7">
+  							  			<p><span data-feather="calendar"></span> <b>New Schedule Realease</b></p>
+	  						  		</div>
+  							  		<div class="col-5 text-end">
+  							  			<p>2 Min Ago <span data-feather="clock"></span></p>
+	  						  		</div>
+  						  		</div>
+  						  		<h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in diam sit amet felis ultricies ultricies vitae et tortor. Proin dapibus justo felis, ut imperdiet lacus accumsan quis.</h6>
+  						  	</a>
+  						  </li>
+  						  <li>
+  						  	<a class="dropdown-item" href="#">
+  						  		<div class="row">
+  							  		<div class="col-7">
+  							  			<p><span data-feather="mail"></span> <b>New message from David</b></p>
+	  						  		</div>
+  							  		<div class="col-5 text-end">
+  							  			<p>30 Min Ago <span data-feather="clock"></span></p>
+	  						  		</div>
+  						  		</div>
+  						  		<h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in diam sit amet felis ultricies ultricies vitae et tortor. Proin dapibus justo felis, ut imperdiet lacus accumsan quis.</h6>
+  						  	</a>
+  						  </li>
+  						  <li><a class="dropdown-item beat-all-notifications" href="#">See all notifications</a></li>
   						</ul>
 			        </li>
 			        <li class="nav-item beat-username">
@@ -97,7 +134,9 @@
   <div class="row">
 
   	<!--menu:start-->
+  	<div class="sidebar-mask"></div>
     <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light1 sidebar collapse">
+	  <div class="template-name">B<span>EAT</span></div>
       <div class="position-sticky pt-5">
       	<h5>Apps</h5>
         <ul class="nav flex-column">
@@ -151,7 +190,7 @@
               <span>Item 2</span>
             </a>
           </li>
-          <li class="nav-item dropdown1 d-none1 beat-subnav" data-bs-toggle="tooltip" data-bs-placement="right" title="Dropdown">
+          <li class="nav-item dropdown1 d-none1 beat-subnav">
 		    <a class="nav-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><span data-feather="list"></span> <span>Dropdown <span data-feather="chevron-down"></span><span data-feather="chevron-up"></span></span></a>
 		    <div class="collapse beat-subnav-collapse" id="collapseExample">
 			  <div class="beat-menu-collapse">
