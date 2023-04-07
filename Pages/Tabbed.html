@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--style:start-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@6.6.6/css/flag-icons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="../Content/StyleSheets/beat.template.css" rel="stylesheet" >
+    <link href="../Content/StyleSheets/beat.template.responsive.css" rel="stylesheet" >
+    <!--style:end-->
+
+    <title>Template Title</title>
+  </head>
+  <body>
+    <header class="navbar navbar-white sticky-top bg-white1 flex-md-nowrap p-0 shadow1">
+  		<a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="/">BEAT</a>
+		<button class="navbar-toggler position-absolute d-md-none beat-nav-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+    	<!-- <span class="navbar-toggler-icon"></span> -->
+    		<span data-feather="menu"></span>
+  		</button>
+  		<div class="beat-search">
+  			<!-- <input class="form-control form-control-dark" type="text" placeholder="Search..." aria-label="Search"> -->
+  			<div class="input-group">
+			  <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
+			  <input type="text" class="form-control" placeholder="Search...">
+			</div>
+  		</div>
+  		<div class="navbar-nav">
+  		  <div class="nav-item text-nowrap">
+  		    <!-- <a class="nav-link px-3" href="#">Sign out</a> -->
+  		    <nav class="navbar navbar-expand navbar-light1 navbar-beat bg-light1">
+			  <div class="container-fluid">
+			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+			      <span class="navbar-toggler-icon"></span>
+			    </button>
+			    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+			      <ul class="navbar-nav ms-auto">
+			      	<li class="nav-item dropdown">
+			          <a class="nav-link dropdown-toggle beat-profile-toogle beat-text-shadow" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			            <span class="fi fi-us"></span>
+			          </a>
+			          <ul class="dropdown-menu dropdown-menu-end beat-dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			            <li><a class="dropdown-item" href="#"><span class="fi fi-us"></span> English</a></li>
+			            <li><a class="dropdown-item" href="#"><span class="fi fi-it"></span> Italian</a></li>
+			            <li><a class="dropdown-item" href="#"><span class="fi fi-fr"></span> French</a></li>
+			            <li><a class="dropdown-item" href="#"><span class="fi fi-de"></span> German</a></li>
+			            <li><a class="dropdown-item" href="#"><span class="fi fi-es"></span> Spanish</a></li>
+			            <li><a class="dropdown-item" href="#"><span class="fi fi-ch"></span> Chinese</a></li>
+			            <li><a class="dropdown-item" href="#"><span class="fi fi-jp"></span> Japanese</a></li>
+			          </ul>
+			        </li>
+			      	<li class="nav-item">
+			          <a class="nav-link dropdown-toggle beat-profile-toogle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			            <i class="fa-solid fa-expand beat-text-shadow"></i>
+			            <i class="fa-solid fa-minimize beat-text-shadow d-none"></i>
+			          </a>
+			        </li>
+			      	<li class="nav-item dropdown1 dropdown-center">
+			          <a class="nav-link dropdown-toggle beat-profile-toogle" href="#" id="notificationDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			            <!-- <i class="fa-solid fa-bell"></i> -->
+			            <i class="fa-solid fa-bell beat-text-shadow beat-bell"></i>
+			          </a>
+			          <ul class="dropdown-menu dropdown-menu-end beat-dropdown-menu beat-notification" aria-labelledby="notificationDropdown">
+  						  <li>
+  						  	<a class="dropdown-item" href="#">
+  						  		<div class="row">
+  							  		<div class="col-7">
+  							  			<p><span data-feather="shopping-cart"></span> <b>New order</b></p>
+	  						  		</div>
+  							  		<div class="col-5 text-end">
+  							  			<p>Just now! <span data-feather="clock"></span></p>
+	  						  		</div>
+  						  		</div>
+  						  		<h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in diam sit amet felis ultricies ultricies vitae et tortor. Proin dapibus justo felis, ut imperdiet lacus accumsan quis.</h6>
+  						  	</a>
+  						  </li>
+  						  <li>
+  						  	<a class="dropdown-item" href="#">
+  						  		<div class="row">
+  							  		<div class="col-7">
+  							  			<p><span data-feather="calendar"></span> <b>New Schedule Realease</b></p>
+	  						  		</div>
+  							  		<div class="col-5 text-end">
+  							  			<p>2 Min Ago <span data-feather="clock"></span></p>
+	  						  		</div>
+  						  		</div>
+  						  		<h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in diam sit amet felis ultricies ultricies vitae et tortor. Proin dapibus justo felis, ut imperdiet lacus accumsan quis.</h6>
+  						  	</a>
+  						  </li>
+  						  <li>
+  						  	<a class="dropdown-item" href="#">
+  						  		<div class="row">
+  							  		<div class="col-7">
+  							  			<p><span data-feather="mail"></span> <b>New message from David</b></p>
+	  						  		</div>
+  							  		<div class="col-5 text-end">
+  							  			<p>30 Min Ago <span data-feather="clock"></span></p>
+	  						  		</div>
+  						  		</div>
+  						  		<h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in diam sit amet felis ultricies ultricies vitae et tortor. Proin dapibus justo felis, ut imperdiet lacus accumsan quis.</h6>
+  						  	</a>
+  						  </li>
+  						  <li><a class="dropdown-item beat-all-notifications" href="#">See all notifications</a></li>
+  						</ul>
+			        </li>
+			        <li class="nav-item beat-username">
+			        	<a class="nav-link" href="#">John Doe</a>
+			        </li>
+			        <li class="nav-item dropdown">
+			          <a class="nav-link dropdown-toggle beat-profile-toogle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			            <img src="../Content/Images/profile.jpg" alt="Profile Image" width="35" height="35" class="rounded-circle me-2">
+			          </a>
+			          <ul class="dropdown-menu dropdown-menu-end beat-dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			            <li><a class="dropdown-item" href="#"><span data-feather="user"></span> Profile</a></li>
+			            <li><a class="dropdown-item" href="#"><span data-feather="calendar"></span> Calendar</a></li>
+			            <li><a class="dropdown-item" href="#"><span data-feather="users"></span> Contacts</a></li>
+			            <li><hr class="dropdown-divider"></li>
+			            <li><a class="dropdown-item" href="#"><span data-feather="log-out"></span> Logout</a></li>
+			          </ul>
+			        </li>
+			      </ul>
+			    </div>
+			  </div>
+			</nav>
+  		  </div>
+  		</div>
+	</header>
+
+<div class="container-fluid">
+  <div class="row">
+
+  	<!--menu:start-->
+  	<div class="sidebar-mask"></div>
+    <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light1 sidebar collapse">
+	  <div class="template-name">B<span>EAT</span></div>
+      <div class="position-sticky pt-5">
+      	<h5>Apps</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Dashboard.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Dashboard">
+              <span data-feather="home"></span>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Table.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Table">
+              <span data-feather="database"></span>
+              <span>Table</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Tabbed.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Tabbed">
+              <span data-feather="layers"></span>
+              <span>Tabbed</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ForgotPassword.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Forgot Password">
+              <span data-feather="key"></span>
+              <span>Forgot Password</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Login.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Login">
+              <span data-feather="users"></span>
+              <span>Login</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Login2.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Login 2">
+              <span data-feather="users"></span>
+              <span>Login 2</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="BlankPage.html" data-bs-toggle="tooltip" data-bs-placement="right" title="Blank">
+              <span data-feather="layers"></span>
+              <span>Blank</span>
+            </a>
+          </li>
+        </ul><h5>User interface</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Item 1">
+              <span data-feather="home"></span>
+              <span>Item 1</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-bs-toggle="tooltip" data-bs-placement="right" title="Item 2">
+              <span data-feather="file"></span>
+              <span>Item 2</span>
+            </a>
+          </li>
+          <li class="nav-item dropdown1 d-none1 beat-subnav">
+		    <a class="nav-link" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample"><span data-feather="list"></span> <span>Dropdown <span data-feather="chevron-down"></span><span data-feather="chevron-up"></span></span></a>
+		    <div class="collapse beat-subnav-collapse" id="collapseExample">
+			  <div class="beat-menu-collapse">
+			    <ul>
+			    	<li><a href="#">Sub menu 1</a></li>
+			    	<li><a href="#">Sub menu 2</a></li>
+			    	<li><a href="#">Sub menu 3</a></li>
+			    </ul>
+			  </div>
+			</div>
+		  </li>
+        </ul>
+
+        <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted d-none">
+          <span>Saved reports</span>
+          <a class="link-secondary" href="#" aria-label="Add a new report">
+            <span data-feather="plus-circle"></span>
+          </a>
+        </h6>
+        <ul class="nav flex-column mb-2 d-none">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Current month
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Last quarter
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Social engagement
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file-text"></span>
+              Year-end sale
+            </a>
+          </li>
+        </ul>
+        <button class="btn btn-collapse btn-beat"><span data-feather="minimize-2"></span><span data-feather="maximize-2"></span> <span>Collapse</span></button>
+      </div>
+    </nav>
+    <!--menu:end-->
+
+    <!--content:start-->
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom d-none">
+        <h1 class="h2">Dashboard</h1>
+        <div class="btn-toolbar mb-2 mb-md-0 d-none">
+          <div class="btn-group me-2">
+            <button type="button" class="btn btn-sm btn-outline-secondary">Share</button>
+            <button type="button" class="btn btn-sm btn-outline-secondary">Export</button>
+          </div>
+          <button type="button" class="btn btn-sm btn-outline-secondary dropdown-toggle">
+            <span data-feather="calendar"></span>
+            This week
+          </button>
+        </div>
+      </div>
+
+      <h2 class="beat-title">Tabbed page</h2>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb beat-breadcrumb">
+          <li class="breadcrumb-item"><a href="#"><span data-feather="home"></span></a></li>
+          <li class="breadcrumb-item active" aria-current="page">Tabbed page</li>
+        </ol>
+      </nav>
+
+      <div class="beat-table-panel beat-border mb-5">
+      <ul class="nav nav-tabs beat-nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="tab-1" data-bs-toggle="tab" data-bs-target="#tab1" type="button" role="tab" aria-controls="tab1" aria-selected="true">Tab 1</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tab-2" data-bs-toggle="tab" data-bs-target="#tab2" type="button" role="tab" aria-controls="tab2" aria-selected="false">Tab 2</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tab-3" data-bs-toggle="tab" data-bs-target="#tab3" type="button" role="tab" aria-controls="tab3" aria-selected="false">Tab 3</button>
+        </li>
+      </ul>
+      <div class="tab-content beat-tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab-1">
+          <img src="https://placehold.co/600x400/png">
+          <h1>Tab 1 Lorem ipsum dolor sit amet</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a odio malesuada, vehicula felis in, porttitor lectus. Donec venenatis nunc metus. Praesent ornare est diam, vitae finibus mauris faucibus quis. Duis magna orci, aliquam at arcu sit amet, sagittis auctor nisi. Aenean vestibulum sem eu orci ultricies, sed accumsan quam varius. Sed vulputate quis orci et ornare. Suspendisse in magna eu felis ullamcorper ultrices.</p>
+          <blockquote class="blockquote beat-blockquote">
+            <p>Aliquam et nunc tincidunt, lobortis risus sit amet, tempor dui. Suspendisse potenti. Curabitur gravida feugiat lacinia. Sed blandit, magna ac dictum imperdiet, massa nisl vehicula lorem, vitae fermentum eros orci quis metus. Nam imperdiet enim et velit luctus porttitor. Maecenas in sollicitudin lorem. Curabitur felis ex, gravida ut mauris vitae, faucibus lobortis mauris. Fusce finibus tortor leo, id pharetra magna tincidunt eu. Duis quis nisl malesuada, blandit eros non, auctor velit. Donec accumsan euismod interdum. Pellentesque gravida porta ipsum, hendrerit posuere enim euismod vitae. Nulla luctus lobortis dui, eget rhoncus lacus malesuada id.</p>
+          </blockquote>
+          <p>Integer vestibulum rhoncus erat ac pulvinar. Quisque vitae lectus nec orci tincidunt laoreet. Praesent feugiat orci id dui placerat, ut mattis neque bibendum. Aenean cursus justo ac commodo rhoncus. Etiam vestibulum mollis enim, nec lobortis velit vulputate nec. Proin consequat sapien at nibh aliquet tincidunt. Cras condimentum urna nec justo elementum, vitae congue nulla ullamcorper. Sed ac leo lobortis, feugiat ex sed, gravida enim. Aliquam nec dolor vitae ligula iaculis imperdiet at eget ipsum. Nunc a tincidunt libero, nec maximus felis. Donec sed arcu ac sem imperdiet placerat. Integer fermentum quam eget ex mattis, at scelerisque ante tempor.</p>
+          <p>In eu iaculis ex. Ut tempor dapibus augue, nec mattis ante imperdiet id. Praesent mattis iaculis justo nec fermentum. Nam auctor sagittis euismod. Sed sagittis erat in vulputate iaculis. Maecenas quis purus sit amet orci tempor condimentum a vel purus. Ut hendrerit nulla mi. Nunc condimentum sed libero ut fermentum. Donec varius metus urna, non pretium nulla blandit quis. Aenean vulputate neque eget risus tristique pellentesque. Sed bibendum dolor sit amet lacus vehicula vestibulum. Nullam vel neque pretium metus dapibus aliquam nec at sem.</p>
+        </div>
+        <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab-2">
+          <img src="https://placehold.co/400x400/png">
+          <h1>Tab 2 Lorem ipsum dolor sit amet</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a odio malesuada, vehicula felis in, porttitor lectus. Donec venenatis nunc metus. Praesent ornare est diam, vitae finibus mauris faucibus quis. Duis magna orci, aliquam at arcu sit amet, sagittis auctor nisi. Aenean vestibulum sem eu orci ultricies, sed accumsan quam varius. Sed vulputate quis orci et ornare. Suspendisse in magna eu felis ullamcorper ultrices.</p>
+          <blockquote class="blockquote beat-blockquote">
+            <p>Aliquam et nunc tincidunt, lobortis risus sit amet, tempor dui. Suspendisse potenti. Curabitur gravida feugiat lacinia. Sed blandit, magna ac dictum imperdiet, massa nisl vehicula lorem, vitae fermentum eros orci quis metus. Nam imperdiet enim et velit luctus porttitor. Maecenas in sollicitudin lorem. Curabitur felis ex, gravida ut mauris vitae, faucibus lobortis mauris. Fusce finibus tortor leo, id pharetra magna tincidunt eu. Duis quis nisl malesuada, blandit eros non, auctor velit. Donec accumsan euismod interdum. Pellentesque gravida porta ipsum, hendrerit posuere enim euismod vitae. Nulla luctus lobortis dui, eget rhoncus lacus malesuada id.</p>
+          </blockquote>
+          <p>Integer vestibulum rhoncus erat ac pulvinar. Quisque vitae lectus nec orci tincidunt laoreet. Praesent feugiat orci id dui placerat, ut mattis neque bibendum. Aenean cursus justo ac commodo rhoncus. Etiam vestibulum mollis enim, nec lobortis velit vulputate nec. Proin consequat sapien at nibh aliquet tincidunt. Cras condimentum urna nec justo elementum, vitae congue nulla ullamcorper. Sed ac leo lobortis, feugiat ex sed, gravida enim. Aliquam nec dolor vitae ligula iaculis imperdiet at eget ipsum. Nunc a tincidunt libero, nec maximus felis. Donec sed arcu ac sem imperdiet placerat. Integer fermentum quam eget ex mattis, at scelerisque ante tempor.</p>
+          <p>In eu iaculis ex. Ut tempor dapibus augue, nec mattis ante imperdiet id. Praesent mattis iaculis justo nec fermentum. Nam auctor sagittis euismod. Sed sagittis erat in vulputate iaculis. Maecenas quis purus sit amet orci tempor condimentum a vel purus. Ut hendrerit nulla mi. Nunc condimentum sed libero ut fermentum. Donec varius metus urna, non pretium nulla blandit quis. Aenean vulputate neque eget risus tristique pellentesque. Sed bibendum dolor sit amet lacus vehicula vestibulum. Nullam vel neque pretium metus dapibus aliquam nec at sem.</p>
+        </div>
+        <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab-3">
+          <img src="https://placehold.co/400x600/png">
+          <h1>Tab 3 Lorem ipsum dolor sit amet</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent a odio malesuada, vehicula felis in, porttitor lectus. Donec venenatis nunc metus. Praesent ornare est diam, vitae finibus mauris faucibus quis. Duis magna orci, aliquam at arcu sit amet, sagittis auctor nisi. Aenean vestibulum sem eu orci ultricies, sed accumsan quam varius. Sed vulputate quis orci et ornare. Suspendisse in magna eu felis ullamcorper ultrices.</p>
+          <blockquote class="blockquote beat-blockquote">
+            <p>Aliquam et nunc tincidunt, lobortis risus sit amet, tempor dui. Suspendisse potenti. Curabitur gravida feugiat lacinia. Sed blandit, magna ac dictum imperdiet, massa nisl vehicula lorem, vitae fermentum eros orci quis metus. Nam imperdiet enim et velit luctus porttitor. Maecenas in sollicitudin lorem. Curabitur felis ex, gravida ut mauris vitae, faucibus lobortis mauris. Fusce finibus tortor leo, id pharetra magna tincidunt eu. Duis quis nisl malesuada, blandit eros non, auctor velit. Donec accumsan euismod interdum. Pellentesque gravida porta ipsum, hendrerit posuere enim euismod vitae. Nulla luctus lobortis dui, eget rhoncus lacus malesuada id.</p>
+          </blockquote>
+          <p>Integer vestibulum rhoncus erat ac pulvinar. Quisque vitae lectus nec orci tincidunt laoreet. Praesent feugiat orci id dui placerat, ut mattis neque bibendum. Aenean cursus justo ac commodo rhoncus. Etiam vestibulum mollis enim, nec lobortis velit vulputate nec. Proin consequat sapien at nibh aliquet tincidunt. Cras condimentum urna nec justo elementum, vitae congue nulla ullamcorper. Sed ac leo lobortis, feugiat ex sed, gravida enim. Aliquam nec dolor vitae ligula iaculis imperdiet at eget ipsum. Nunc a tincidunt libero, nec maximus felis. Donec sed arcu ac sem imperdiet placerat. Integer fermentum quam eget ex mattis, at scelerisque ante tempor.</p>
+          <p>In eu iaculis ex. Ut tempor dapibus augue, nec mattis ante imperdiet id. Praesent mattis iaculis justo nec fermentum. Nam auctor sagittis euismod. Sed sagittis erat in vulputate iaculis. Maecenas quis purus sit amet orci tempor condimentum a vel purus. Ut hendrerit nulla mi. Nunc condimentum sed libero ut fermentum. Donec varius metus urna, non pretium nulla blandit quis. Aenean vulputate neque eget risus tristique pellentesque. Sed bibendum dolor sit amet lacus vehicula vestibulum. Nullam vel neque pretium metus dapibus aliquam nec at sem.</p>
+        </div>
+      </div>
+      </div>
+    </main>
+    <!--content:end-->
+  </div>
+</div>
+
+    <!--javascript:start-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+ 	<script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
+ 	<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
+ 	<script src="../Content/Scripts/beat.template.js"></script>
+    <!--javascript:end-->
+  </body>
+</html>

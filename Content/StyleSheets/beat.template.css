@@ -533,3 +533,106 @@ header .nav-link{
   padding: 0px;
 
 }
+.beat-title{
+  margin: 0 0 15px;
+  text-shadow: 0 0 1px #f3f7fa, 0 0 1px #f3f7fa, 0 0 1px #f3f7fa, 0 0 1px #f3f7fa, 0 0 1px #f3f7fa, 0 0 1px #f3f7fa, 0 0 1px #f3f7fa, 0 1px 2px rgba(0,0,0,.3), 0 3px 9px rgba(0,0,0,.1);
+  color: #4a596a;
+  font-size: 2em;
+}
+.beat-breadcrumb{
+  margin: 0 0 45px;
+}
+.beat-breadcrumb .feather{
+  width: 15px;
+  height: 15px;
+  position: relative;
+  top: -4px;
+}
+.beat-breadcrumb .breadcrumb-item a{
+  color: #4a596a;
+}
+.beat-table-panel{
+  -webkit-box-shadow: 0 8px 16px 0 rgba(40,40,90,.09), 0 3px 6px 0 rgba(0,0,0,.065);
+    box-shadow: 0 8px 16px 0 rgba(40,40,90,.09), 0 3px 6px 0 rgba(0,0,0,.065);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.beat-table-panel table {
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+    text-align: left;
+    background: #FFF;
+}
+
+.beat-table-panel table thead {
+    background: #fbfdfd;
+    border-bottom: 2px solid #f6f9fb;
+
+    background: rgba(243,247,250,.3);
+    border-bottom: 2px solid rgba(243,247,250,.5);
+}
+
+.beat-table-panel table thead tr th {
+    padding: 12px 20px;
+    color: rgba(74,89,106,.4);
+}
+.beat-table-panel table thead tr{
+    background: #fbfdfd;
+    border-bottom: 2px solid #f6f9fb;
+}
+
+.beat-table-panel table tbody tr td {
+    padding: 12px 20px
+}
+
+.beat-table-panel table tbody tr:nth-child(2n) {
+    background: #fafcfd;
+    background: rgba(243,247,250,.4);
+}
+.beat-nav-tabs{
+  margin-left: -1px;
+  background-color: #f5f7fa;
+}
+.beat-border{
+  border: 1px solid #dcdfe6;
+}
+.beat-nav-tabs .nav-link{
+  border-radius: 0px;
+  border-top: none;
+}
+.beat-nav-tabs .nav-link{
+  color: #909399;
+}
+.beat-nav-tabs .nav-link.active{
+  color: #5f8fdf;
+}
+.beat-tab-content{
+  background: #FFF;
+  padding: 20px;
+}
+.beat-tab-content .nav-tabs{
+  background-color: #f5f7fa;
+}
+.beat-tab-content .tab-pane{
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.beat-tab-content h1{
+  line-height: 44px;
+  font-size: 2em;
+  color: #000;
+  font-weight: 700;
+  margin: 20px 0;
+}
+.beat-tab-content p{
+  color: #000;
+  font-size: 16px;
+  margin: 0 0 1em;
+}
+.beat-blockquote{
+  border-left: 5px solid rgba(74,89,106,.1);
+  font-style: italic;
+  padding: 5px 20px;
+  margin: 0 0 20px;
+}
