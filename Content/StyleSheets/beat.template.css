@@ -22,7 +22,9 @@ body {
     background: #f3f7fa;
     color: #4a596a;
 }
-
+button, input, optgroup, select, textarea{
+  font-family: "Nunito Sans", Helvetica, Arial, sans-serif;
+}
 .feather {
   width: 16px;
   height: 16px;
@@ -635,4 +637,307 @@ header .nav-link{
   font-style: italic;
   padding: 5px 20px;
   margin: 0 0 20px;
+}
+
+.back-to-top{
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  border-radius: 4px;
+  border: none;
+  color: #5f8fdf;
+  background: #dfe8f9;
+  padding: 4px 8px;
+  margin-top: 20px;
+  cursor: pointer;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid transparent;
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  opacity: 0;
+}
+.back-to-top:hover{
+  border: 2px solid #5f8fdf;
+  -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.back-to-top svg{
+  width: 32px;
+  height: 32px;
+}
+.show_top_btn{
+  opacity: 1;
+}
+
+.beat-auth{
+  background: #4a596a;
+  height: 100vh;
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.beat-auth-panel{
+  -webkit-box-shadow: 0 40px 90px 0 rgba(40, 40, 90, 0.09), 0 13px 30px 0 rgba(40, 40, 90, 0.09), 0 4px 13px 0 rgba(0, 0, 0, 0.065);
+    box-shadow: 0 40px 90px 0 rgba(40, 40, 90, 0.09), 0 13px 30px 0 rgba(40, 40, 90, 0.09), 0 4px 13px 0 rgba(0, 0, 0, 0.065);
+    border-radius: 5px;
+    background: #FFF;
+    padding: 30px;
+    max-width: 340px;
+    width: 340px;
+    margin: 0 auto;
+}
+.beat-auth-panel h2{
+  margin: 0 0 50px;
+  text-align: center;
+  margin: 0 0 15px;
+  text-shadow: 0 0 1px #f3f7fa, 0 0 1px #f3f7fa, 0 0 1px #f3f7fa, 0 0 1px #f3f7fa, 0 0 1px #f3f7fa, 0 0 1px #f3f7fa, 0 0 1px #f3f7fa, 0 1px 2px rgba(0,0,0,.3), 0 3px 9px rgba(0,0,0,.1);
+  color: #4a596a;
+  font-size: 2em;
+  font-weight: 700;
+  line-height: 80px;
+}
+.beat-login-right .login-block input.form-control,
+.beat-auth-panel input.form-control{
+  border: none;
+  border-bottom: 2px solid rgba(74, 89, 106, 0.15);
+  width: 100%;
+  padding: 0;
+  padding-bottom: 4px;
+  font-size: 16px;
+  -webkit-transition: all .2s ease-out;
+  transition: all .2s ease-out;
+  border-radius: 0px;
+  color: #4a596a;
+}
+.beat-login-right .login-block input.form-control{
+  margin-bottom: 20px;
+}
+.beat-login-right .login-block input.form-control:focus,
+.beat-auth-panel input.form-control:focus{
+  border-color: #5f8fdf;
+}
+.beat-login-right .login-block input.form-control:focus,
+.beat-auth-panel input.form-control:focus{
+  outline: none;
+  box-shadow: none;
+}
+
+.beat-auth-panel .btn-beat-submit{
+  display: block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  background: #FFFFFF;
+  border: 1px solid #DCDFE6;
+  border-color: #DCDFE6;
+  color: #606266;
+  -webkit-appearance: none;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  -webkit-transition: .1s;
+  transition: .1s;
+  font-weight: 500;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 9px 15px;
+  font-size: 12px;
+  border-radius: 3px;
+  margin: 30px auto 0;
+}
+.beat-auth-panel .btn-beat-submit:hover{
+  color: #5f8fdf;
+  border-color: #5f8fdf;
+}
+
+/* text divider */
+.text-divider {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center; 
+
+}
+.text-divider::before {
+    content: '';
+    height: 1px;
+    background: rgba(74, 89, 106, 0.3);
+    -ms-flex: 1 1 100%;
+    -webkit-box-flex: 1;
+            flex: 1;
+    margin: 0 10px 0 0; 
+}
+.text-divider::after {
+    content: '';
+    height: 1px;
+    background: rgba(74, 89, 106, 0.3);
+    -ms-flex: 1 1 100%;
+    -webkit-box-flex: 1;
+            flex: 1;
+    margin: 0 0 0 10px; 
+  }
+.signin{
+  font-size: 14px;
+  text-align: center;
+  line-height: 1.4;
+  color: #4a596a;
+  padding-top: 20px;
+}
+.beat-auth-panel.login-box input.form-control{
+  margin: 0 0 20px;
+}
+.beat-auth-panel.login-box .form-check{
+  font-size: 14px;
+  color: #4a596a;
+}
+.beat-auth-panel.login-box .form-check .form-check-input{
+  position: relative;
+  top: -2px;
+}
+.beat-auth-panel.login-box .form-check .form-check-input:focus{
+  box-shadow: none;
+}
+.beat-auth-panel.login-box .form-check .form-check-input:checked{
+  background-color: #5f8fdf;
+  border-color: #5f8fdf;
+  box-shadow: none;
+}
+.beat-auth-panel.login-box .form-check .form-check-input:checked + label{
+  color: #5f8fdf;
+}
+.beat-auth-panel.login-box a.forgot-link{
+  font-size: 14px;
+  color: #4a596a;
+  display: block;
+  text-align: right;
+  text-decoration: none;
+}
+.beat-login-right .login-block  .btn-beat-login,
+.beat-auth-panel.login-box .social-btn,
+.beat-auth-panel.login-box .btn-beat-login{
+  color: #606266;
+  border-color: #606266;
+  border-width: 2px;
+  font-weight: bold;
+  border-radius: 0;
+  font-size: 12px;
+  margin: 20px auto;
+  padding: 9px 15px;
+  display: block;
+  width: 160px;
+  line-height: 1;
+}
+.beat-login-right .login-block  .btn-beat-login{
+  margin-top: 40px;
+}
+.beat-auth-panel.login-box .social-btn{
+    color: #FFF;
+    border: 1px solid #DCDFE6;
+    font-weight: normal;
+    margin: 10px auto 0;
+}
+.social-btn.google{
+    background-color: #d73d32;
+    margin-top: 20px !important;
+}
+.social-btn.facebook{
+    background-color: #3f5c9a;
+    margin-bottom: 20px !important;
+}
+.beat-auth-panel.login-box input.form-control::-webkit-input-placeholder {
+   color: rgba(74, 89, 106, 0.55);
+}
+
+.beat-auth-panel.login-box input.form-control:-moz-placeholder {
+   color: rgba(74, 89, 106, 0.55);  
+}
+
+.beat-auth-panel.login-box input.form-control::-moz-placeholder {
+   color: rgba(74, 89, 106, 0.55);  
+}
+
+.beat-auth-panel.login-box input.form-control:-ms-input-placeholder {  
+   color: rgba(74, 89, 106, 0.55);  
+}
+.beat-login-left:after{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: -moz-linear-gradient(bottom, rgba(255,255,255,0) 0%, rgba(171,171,171,1) 100%);   /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(171,171,171,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(bottom, rgba(255,255,255,0) 0%,rgba(171,171,171,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(bottom, rgba(255,255,255,0) 0%,rgba(171,171,171,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(bottom, rgba(255,255,255,0) 0%,rgba(171,171,171,1) 100%); /* IE10+ */
+    background: linear-gradient(to top, rgba(255,255,255,0) 0%,rgba(171,171,171,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#825b00',GradientType=0 ); /* IE6-9 */
+    height: 100vh;
+}
+.beat-login-left{
+  background-image: url('../Images/bg-login2.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 100vh;
+  text-align: center;
+  padding: 50px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.beat-auth.login2{
+  display: block;
+  background: #FFF;
+}
+.beat-auth.login2 h2{
+  font-size: 3.5em;
+  color: #4a596a;
+  color: #FFF;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 0 100px;
+}
+.beat-auth.login2 h2 + p{
+  color: #FFF;
+}
+.beat-login-right{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.beat-login-right .login-block h3{
+  color: #4a596a;
+  font-size: 1.5em;
+  margin: 0 0 1em;
+  font-weight: bold;
+}
+.beat-login-right .login-block h4{
+  font-size: 16px;
+  color: #4a596a;
+  margin: 0 0 40px;
 }

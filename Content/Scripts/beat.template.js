@@ -87,55 +87,91 @@ sidebar_mask.addEventListener('click', function handleClick(event) {
   bootstrap.Collapse.getOrCreateInstance(sidebar).toggle();
 });
 // sidebar toggle end
+feather.replace()
 
-(function () {
-  'use strict'
+// active menu start
 
-  feather.replace({ 'aria-hidden': 'true' })
+ var path = window.location.pathname;
+ path = path.replace(/\/$/, "");
+ path = decodeURIComponent(path);
+ if (path == '') {
+ path = "/";
+ }
+ // console.log(path);
+var navClass = document.querySelectorAll("#sidebarMenu .nav .nav-link");
 
-  // Graphs
-  var ctx = document.getElementById('myChart')
-  // eslint-disable-next-line no-unused-vars
-  var myChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-      labels: [
-        'Sunday',
-        'Monday',
-        'Tuesday',
-        'Wednesday',
-        'Thursday',
-        'Friday',
-        'Saturday'
-      ],
-      datasets: [{
-        data: [
-          15339,
-          21345,
-          18483,
-          24003,
-          23489,
-          24092,
-          12034
-        ],
-        lineTension: 0,
-        backgroundColor: 'transparent',
-        borderColor: '#007bff',
-        borderWidth: 4,
-        pointBackgroundColor: '#007bff'
-      }]
-    },
-    options: {
-      scales: {
-        yAxes: [{
-          ticks: {
-            beginAtZero: false
-          }
-        }]
-      },
-      legend: {
-        display: false
-      }
+for (const element of navClass) {
+  if(element.href.includes(path) && !element.href.includes("#")){
+    element.classList.add("active");
+  }
+}
+// active menu end
+
+var scroll_top = document.querySelector(".back-to-top");
+
+window.addEventListener("scroll", (event) => {
+    let scroll = this.scrollY;
+    if(scroll > 50){
+      scroll_top.classList.add("show_top_btn");
+    }else{
+      scroll_top.classList.remove("show_top_btn");
     }
-  })
-})();
+});
+
+scroll_top.addEventListener('click', function handleClick(event) {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+// back to top start
+
+// back to top start end
+// (function () {
+//   'use strict'
+
+//   feather.replace({ 'aria-hidden': 'true' })
+
+//   // Graphs
+//   var ctx = document.getElementById('myChart')
+//   // eslint-disable-next-line no-unused-vars
+//   var myChart = new Chart(ctx, {
+//     type: 'line',
+//     data: {
+//       labels: [
+//         'Sunday',
+//         'Monday',
+//         'Tuesday',
+//         'Wednesday',
+//         'Thursday',
+//         'Friday',
+//         'Saturday'
+//       ],
+//       datasets: [{
+//         data: [
+//           15339,
+//           21345,
+//           18483,
+//           24003,
+//           23489,
+//           24092,
+//           12034
+//         ],
+//         lineTension: 0,
+//         backgroundColor: 'transparent',
+//         borderColor: '#007bff',
+//         borderWidth: 4,
+//         pointBackgroundColor: '#007bff'
+//       }]
+//     },
+//     options: {
+//       scales: {
+//         yAxes: [{
+//           ticks: {
+//             beginAtZero: false
+//           }
+//         }]
+//       },
+//       legend: {
+//         display: false
+//       }
+//     }
+//   })
+// })();

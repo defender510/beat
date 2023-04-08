@@ -124,6 +124,9 @@ Beat Template
 	#sidebarMenu + main{
 		margin-top: 20px;
 	}
+	.beat-table-panel img{
+		width: 100%;
+	}
 }
 @media (max-width: 650px){
 	
