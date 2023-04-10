@@ -804,6 +804,26 @@ header .nav-link{
   color: #4a596a;
   padding-top: 20px;
 }
+.beat-auth.login2 .beat-label,
+.beat-auth-panel .beat-label{
+  margin: 0px;
+  height: 12px;
+  line-height: 12px;
+  font-size: 10px;
+  text-transform: uppercase;
+  opacity: 0;
+
+}
+.beat-auth.login2 .beat-label.beat-label-focus,
+.beat-auth-panel .beat-label.beat-label-focus{
+  opacity: 1;
+  color: #5f8fdf;
+}
+.beat-auth.login2 .beat-label.beat-label-unfocus,
+.beat-auth-panel .beat-label.beat-label-unfocus{
+  opacity: 1;
+  color: rgba(74,89,106,.4);
+}
 .beat-auth-panel.login-box input.form-control{
   margin: 0 0 20px;
 }

@@ -127,6 +127,11 @@ Beat Template
 	.beat-table-panel img{
 		width: 100%;
 	}
+	.beat-login-left,
+	.beat-login-left:after,
+	.beat-login-right{
+		height: 50vh;
+	}
 }
 @media (max-width: 650px){
 	
