@@ -161,54 +161,72 @@ if(inputBox){
 }
 //active label on type end
 
-// (function () {
-//   'use strict'
+// chart js start
+(function () {
+  'use strict'
 
-//   feather.replace({ 'aria-hidden': 'true' })
+  feather.replace({ 'aria-hidden': 'true' })
 
-//   // Graphs
-//   var ctx = document.getElementById('myChart')
-//   // eslint-disable-next-line no-unused-vars
-//   var myChart = new Chart(ctx, {
-//     type: 'line',
-//     data: {
-//       labels: [
-//         'Sunday',
-//         'Monday',
-//         'Tuesday',
-//         'Wednesday',
-//         'Thursday',
-//         'Friday',
-//         'Saturday'
-//       ],
-//       datasets: [{
-//         data: [
-//           15339,
-//           21345,
-//           18483,
-//           24003,
-//           23489,
-//           24092,
-//           12034
-//         ],
-//         lineTension: 0,
-//         backgroundColor: 'transparent',
-//         borderColor: '#007bff',
-//         borderWidth: 4,
-//         pointBackgroundColor: '#007bff'
-//       }]
-//     },
-//     options: {
-//       scales: {
-//         yAxes: [{
-//           ticks: {
-//             beginAtZero: false
-//           }
-//         }]
-//       },
-//       legend: {
-//         display: false
-//       }
-//     }
-//   })
-// })();
+  // Graphs
+  var ctx = document.getElementById('blueChart');
+  if(ctx){
+  // eslint-disable-next-line no-unused-vars
+  var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels: [
+        'Sunday',
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday'
+      ],
+      datasets: [{
+        data: [
+          15339,
+          21345,
+          18483,
+          24003,
+          23489,
+          24092,
+          12034
+        ],
+        // lineTension: 0,
+        backgroundColor: 'rgba(255,255,255,0.3)',
+        borderColor: '#ffffff',
+        borderWidth: 4,
+        pointBackgroundColor: '#ffffff'
+        // fill: true;
+      }]
+    },
+    options: {
+      scales: {
+        yAxes: [{
+          ticks: {
+            beginAtZero: false,
+            fontColor: 'white'
+          },
+          gridLines: {
+                color: "rgba(0, 0, 0, 0)",
+            }
+        }],
+        xAxes: [{
+          ticks: {
+            beginAtZero: false,
+            fontColor: 'white'
+          },
+          gridLines: {
+                color: "rgba(0, 0, 0, 0)",
+          }
+        }]
+      },
+      legend: {
+        display: false
+      }
+    }
+  })
+  }//end if ctx check
+})();
+// chart js end

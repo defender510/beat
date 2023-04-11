@@ -961,3 +961,68 @@ header .nav-link{
   color: #4a596a;
   margin: 0 0 40px;
 }
+.beat-info{
+  -webkit-box-shadow: 0 8px 16px 0 rgba(40,40,90,.09), 0 3px 6px 0 rgba(0,0,0,.065);
+    box-shadow: 0 8px 16px 0 rgba(40,40,90,.09), 0 3px 6px 0 rgba(0,0,0,.065);
+    background: #FFF;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 0 30px;
+}
+.beat-info .beat-info-top{
+  padding: 20px 20px 0;
+  padding: 20px;
+}
+.beat-info .info-type{
+    background: rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.02);
+    border-radius: 4px;
+    text-align: center;
+    padding: 10px 5px 5px;
+    width: 75px;
+    color: #5f8fdf;
+}
+.beat-info .info-type > i{
+  font-size: 24px;
+}
+.beat-info .info-type p{
+  margin: 10px 0 0;
+  font-size: 14px;
+  font-weight: 700;
+}
+.beat-info .info-type p i{
+  color: #13ce66;
+  font-size: 12px;
+}
+.beat-info .right-info p{
+  color: #4a596a;
+  opacity: 0.5;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.beat-info .right-info h4{
+  color: #4a596a;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.beat-green{
+  color: #13ce66 !important;
+}
+.beat-gray{
+  color: #909399 !important;
+}
+.beat-blue-chart{
+  background-color: #5f8fdf !important;
+}
+.beat-blue-chart h1{
+  color: #FFF;
+  font-size: 2em;
+  font-weight: bold;
+}
+.beat-blue-chart p{
+  color: #FFF;
+  font-size: 1.17em;
+  opacity: 0.5;
+  font-weight: bold;
+  margin: 0 0 40px;
+}
